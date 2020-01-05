@@ -1,5 +1,6 @@
 const HeaderTitre = document.querySelector("header article");
 const HeaderParticle = document.querySelector("#particles-js");
+const HeaderIcons = document.querySelector("header article div");
 const Overlay = document.querySelector(".overlay");
 const NavButton = document.querySelector("#navButton");
 
@@ -8,7 +9,8 @@ $(document).ready(function() {
     NavButton.style.opacity = 0.4;
     setTimeout(function(){
         HeaderParticle.style.opacity = 1;
-    }, 500);
+        HeaderIcons.style.opacity = 1; 
+    }, 500);   
 });
 
 function openNav(){
