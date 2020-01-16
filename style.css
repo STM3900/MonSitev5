@@ -10,7 +10,20 @@ body{
     margin: 0;
     color: white;
     font-family: 'Quicksand', sans-serif;
-    background: rgb(15, 15, 15);
+    background: rgb(20, 20, 20);
+}
+
+h1{
+    color: rgb(99, 145, 185);
+    font-size: 2.5vw;
+    font-weight: normal;
+}
+
+section{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 /* NAV MENU */
@@ -21,7 +34,7 @@ body{
     height: 100vh;
     background: black;
     display: none;
-    z-index: 10;
+    z-index: 12;
     opacity: 0;
 
     transition: 0.3s;
@@ -37,7 +50,7 @@ body{
     z-index: 5;
     transition: 0.3s;
     margin: 0;
-    z-index: 9;
+    z-index: 19;
 }
 
 #navButton:hover{
@@ -58,7 +71,7 @@ body{
     z-index: 20;
 }
 
-.sidenav section{
+.sidenav aside{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -94,7 +107,7 @@ body{
 
 .sidenav article:hover #navIcon{
     transform: rotate(-18deg);
-    color: rgb(99, 145, 185);
+    color:rgb(99, 145, 185);
 }
 
 .sidenav .closebtn{
@@ -194,7 +207,6 @@ header h2 {
 }
 
 .presentation {
-    height: 20vh;
     background: rgb(20, 20, 20);
     display: flex;
     flex-direction: row;
@@ -204,10 +216,362 @@ header h2 {
 }
 
 .presentation p{
-    font-size: 22px;
-    margin-right: 10%;
-    margin-left: 10%;
+    font-size: 1.2vw;
+    text-align: justify;
+    padding-top: 2%;
+}
+
+/* PROJETS */
+
+.projetOverlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+    transition: 0.3s;
+}
+
+.projetsListe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    border: red hidden 1px;
+}
+
+.projetsListe article{
+    width: 350px;
+    height: 165px;
+    /*background: rgb(99, 145, 185);*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    transition: 0.3s;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projetsListe article:hover{
+    cursor: pointer;
+}
+
+.projetsListe article aside{
+    position: absolute;
+    background: rgb(99, 145, 185);
+    width: 350px;
+    height: 165px;
+    transition: 0.3s;
+}
+
+.projetsListe article:hover aside{
+    background: rgba(0, 0, 255, 0);
+}
+
+.projetsListe h3{
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    z-index: 10;
+    text-align: center;
+}
+
+.projetsListe h4{
+    font-size: 23px;
+    margin: 0;
+    font-weight: normal;
+    z-index: 10;
+    text-align: center;
+}
+
+.projetsListe h5{
+    font-size: 23px;
+    margin: 0;
+    font-weight: normal;
+    z-index: 10;
+    text-align: center;
+}
+
+.musicHours{
+  background-image: url("medias/images/MusicHours.png");
+}
+
+.beeLeave{
+    background: #1c2230;
+}
+
+.convertisseur{
+    background: #2F243A;   
+}
+
+.ham{
+    background-image: url("medias/images/cppBg.jpg");
+}
+
+.lasr{
+    background: #af1539;
+}
+
+.tema{
+    background-image: linear-gradient(to right top, #302e4e, #5f3569, #993070, #d02861, #f63d3d);
+}
+
+.panel{
+    position: absolute;
+
+    background: white;
+    width: 30%; 
+    height: 10%;
+    z-index: -1;
+    transition: ease-out 0.3s;
+    opacity: 0;
+    z-index: -100;
+}
+
+.panelok{
+    position: absolute;
+
+    width: 80%; 
+    height: 60%;
+    z-index: 10;
+    transition: ease-out 0.3s;
+}
+
+.panelok aside{
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.panelclose{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+
+    transition: 0.3s;
+}
+
+.panelclose:hover{
+    filter: brightness(1);
+}
+
+#bgbottom{
+    background-position: bottom;
+}
+
+.brightless{
+    filter: brightness(0.5);
+    /*background-attachment: fixed;*/
+}
+
+.panelFlex{
+    height: 94%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    padding: 1%;
+    border: hidden purple 2px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.panelContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    z-index: 1;
+    border: hidden yellow 2px;
+    width: 70%;
+}
+
+.panelPlus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 15%;
+    border: hidden yellow 2px;
+}
+
+.panelPlus img{
+    width: 100%;
+    opacity: 0.9;
+
+    margin-bottom: 6%;
+}
+
+.panelPlus a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+
+    margin-top: 6%;
+    width: 99%;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    transition: 0.3s;  
+
+    background: rgba(99, 145, 185, 0);
+    color: white;
+    border: solid 2px white;
+}
+
+.panelPlus a:hover{
+    color: white;
+    cursor: pointer;
+    border: solid 2px white;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.panelPlusConv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    border: hidden yellow 2px;
+}
+
+.panelFlex h1{
+    color: white;
+    margin: 0;
+    font-size: 50px;
+}
+
+.panelFlex h2{
+    color: white;
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 3%;
+}
+
+.panelFlexListe{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    width: 100%;
+    border: hidden red 2px;
+}
+
+.panelFlexDesc{
+    border: hidden blue 2px;
+}
+
+.panelFlexDescConv{
+    border: hidden blue 2px;
+    width: 95%;
+}
+
+.panelFlexDescConv p{
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
     text-align: justify;
 }
 
-/* GROS TEST */
+.panelFlex .panelFlexDesc p{
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.panelFlexListe div{
+    width: 50%;
+    border: solid hidden 2px;
+}
+
+.panelFlexListe h2{
+    font-size: 30px;
+}
+
+.panelFlexListe li{
+    font-size: 18px;
+}
+
+.Formless{
+    filter: brightness(1);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+  
+form div{
+    width: 100%;
+}
+  
+form p{
+    color: white; 
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    transition: opacity 0.3s;
+    opacity: 1;
+    text-align: left;
+}
+  
+input[type*="e"]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    background: none;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: rgba(255, 255, 255, 0.700) solid 2px;
+    transition: 0.3s;
+    outline: none;
+    font-style: italic;
+    font-size: 18px;
+}
+  
+input[type*="e"]:focus{
+    border-bottom: rgb(255, 255, 255) solid 2px;
+}
+
+.panelPadding{
+    padding-left: 3%;
+}
+
+.panelRadiusRound{
+    border-radius: 100px;
+}
