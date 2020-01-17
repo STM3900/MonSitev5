@@ -47,6 +47,89 @@ NavButton.addEventListener("mouseout", function(){
     NavButton.style.opacity = 0.4;
 });
 
+//Compétences
+
+const data = [
+    { dateLabel: 'Février 2019', title: 'TEMA' },
+    { dateLabel: 'Mars 2019', title: 'Les Dessins de Lasr' },
+    { dateLabel: 'Septembre 2019', title: 'BeeLeave' },
+    { dateLabel: 'Décembre 2019', title: 'MusicHours' },
+    { dateLabel: 'Janvier 2020', title: 'Ce site !' }
+    ];
+
+    const data2 = [
+    { dateLabel: 'Février 2019', title: 'TEMA' },
+    { dateLabel: 'Mars 2019', title: 'Les Dessins de Lasr' },
+    { dateLabel: 'Septembre 2019', title: 'BeaLeave' }
+    ];
+
+    const data3 = [
+        { dateLabel: 'Mars 2019', title: 'Convertisseur B/H/D' },
+        { dateLabel: 'Décembre 2019', title: 'MusicHours' },
+        { dateLabel: 'e', title: '' },
+    ];
+    
+    new Vue({
+    el: '#app', 
+    data: {
+        steps: data,
+        steps2: data2,
+        steps3: data3,
+    },
+    mounted() {
+        var swiper = new Swiper('.swiper-container', {
+            //pagination: '.swiper-pagination',
+            slidesPerView: 3,
+            paginationClickable: true,
+            grabCursor: true,
+            paginationClickable: true,
+            nextButton: '.next-slide',
+            prevButton: '.prev-slide',
+        });    
+
+        var swiper2 = new Swiper('.swiper-container2', {
+            //pagination: '.swiper-pagination',
+            slidesPerView: 3,
+            paginationClickable: true,
+            grabCursor: true,
+            paginationClickable: true,
+            nextButton: '.next-slide2',
+            prevButton: '.prev-slide2',
+        });    
+
+        
+        var swiper3 = new Swiper('.swiper-container3', {
+            //pagination: '.swiper-pagination',
+            slidesPerView: 3,
+            paginationClickable: true,
+            grabCursor: true,
+            paginationClickable: true,
+            nextButton: '.next-slide3',
+            prevButton: '.prev-slide3',
+        });    
+    }
+})
+
+//Pour faire des "points vides en selectionnant ceux voulu (ils sont marqués de la lettre e)"
+const SelectDate = document.querySelectorAll('.date');
+for(let i = 0; i < SelectDate.length; i++){
+    if(SelectDate[i].innerText == "e"){
+        SelectDate[i].style.visibility = "hidden";
+    }
+}
+
+//Pour cacher les flèches quand la timeline à 3 points ou moins
+const SelectRow = document.querySelectorAll('.row');
+for(let i = 0; i < SelectRow.length; i++){
+    let SelectTempSpan = SelectRow[i].querySelectorAll('.swiper-slide');
+    if(SelectTempSpan.length <= 3){
+        let SelectTempButton = SelectRow[i].querySelectorAll('.btn');
+        SelectTempButton[0].style.visibility = "hidden";
+        SelectTempButton[1].style.visibility = "hidden";
+    }
+}
+
+//Projets
 const Projets = document.querySelectorAll('.projets');
 const ProjetsOverlay = document.querySelector('.projetOverlay');
 const ProjetsListe = document.querySelectorAll('.projetsListe article');

@@ -66,6 +66,89 @@
     </section>
     <section class="comp">
         <h1>Compétences</h1>
+        <div id="app" class="container">
+            <div class="appDiv">
+                <h2>HTML / CSS</h2>
+                <div class="row">
+                    <section>
+                      <button type="button" class="btn btn-default btn-sm prev-slide"><i class="fas fa-chevron-left"></i></button>
+                    </section>
+                    <section class="aled">
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper timeline">
+                          <div class="swiper-slide" v-for="item in steps">
+                            <div class="timestamp">
+                              <span class="date">{{item.dateLabel}}<span>
+                            </div>
+                            <div class="status">
+                              <span><a href="">{{item.title}}</a></span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </section>
+                    <section>
+                      <button type="button" class="btn btn-default btn-sm next-slide"><i class="fas fa-chevron-right"></i></button>
+                    </section>
+                  </div>
+            </div>
+            <div class="appDiv">
+                <h2>PHP</h2>
+                <div class="row">
+                    <section>
+                      <button type="button" class="btn btn-default btn-sm prev-slide2"><i class="fas fa-chevron-left"></i></button>
+                    </section>
+                    <section class="aled">
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper timeline">
+                          <div class="swiper-slide" v-for="item in steps2">
+                            <div class="timestamp">
+                              <span class="date">{{item.dateLabel}}<span>
+                            </div>
+                            <div class="status">
+                              <span><a href="">{{item.title}}</a></span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </section>
+                    <section>
+                      <button type="button" class="btn btn-default btn-sm next-slide2"><i class="fas fa-chevron-right"></i></button>
+                    </section>
+                  </div>
+            </div>
+            <div class="appDiv">
+                <h2>JavaScript</h2>
+                <div class="row">
+                    <section>
+                      <button type="button" class="btn btn-default btn-sm prev-slide3"><i class="fas fa-chevron-left"></i></button>
+                    </section>
+                    <section class="aled">
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper timeline">
+                          <div class="swiper-slide" v-for="item in steps3">
+                            <div class="timestamp">
+                              <span class="date">{{item.dateLabel}}<span>
+                            </div>
+                            <div class="status">
+                              <span><a href="">{{item.title}}</a></span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </section>
+                    <section>
+                      <button type="button" class="btn btn-default btn-sm next-slide3"><i class="fas fa-chevron-right"></i></button>
+                    </section>
+                  </div>
+            </div>
+        </div>
     </section>
     <section class="projets">
         <h1>Projets</h1>
@@ -150,14 +233,14 @@
                                 <h2>Langages utilisés :</h2>
                                 <ul>
                                     <li>HTML / CSS</li>
-                                    <li>JS</li>
+                                    <li>PHP</li>
                                     <li>VSCode / GitHub</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="panelPlus">
-                        <a href="https://theomigeat.com/MusicHours/" target="_blank">En savoir plus</a>
+                        <a href="https://little-rpg.fr/workshop/beeleave/public/index.php" target="_blank">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -220,7 +303,7 @@
                         </div>
                     </div>
                     <div class="panelPlus">
-                        <a href="https://theomigeat.com/MusicHours/" target="_blank">En savoir plus</a>
+                        <a href="medias/fichiers/Projet.exe">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -256,7 +339,7 @@
                     </div>
                     <div class="panelPlus">
                         <img src="medias/images/lasr.jpg" class="panelRadiusRound" alt="">
-                        <a href="https://theomigeat.com/MusicHours/" target="_blank">En savoir plus</a>
+                        <a href="https://www.theomigeat.com/lesdessinsdelasr/" target="_blank">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -293,7 +376,7 @@
                     </div>
                     <div class="panelPlus">
                         <img src="medias/images/tema.png" class="panelRadiusRound" alt="">
-                        <a href="https://theomigeat.com/MusicHours/" target="_blank">En savoir plus</a>
+                        <a href="https://tema.axsiow.ovh/" target="_blank">En savoir plus</a>
                     </div>
                 </div>
             </div>
