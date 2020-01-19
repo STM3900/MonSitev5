@@ -68,6 +68,24 @@ const data = [
         { dateLabel: 'Décembre 2019', title: 'MusicHours' },
         { dateLabel: 'e', title: '' },
     ];
+
+    const data4 = [
+        { dateLabel: 'Février 2019', title: 'TEMA' },
+        { dateLabel: 'Septembre 2019', title: 'BeeLeave' },
+        { dateLabel: 'e', title: '' },
+    ];
+
+    const data5 = [
+        { dateLabel: 'Avril 2019', title: 'Hero And Monsters' },
+        { dateLabel: 'e', title: '' },
+        { dateLabel: 'e', title: '' },
+    ];
+
+    const data6 = [
+        { dateLabel: 'Mars 2019', title: 'Safe Or Well' },
+        { dateLabel: 'e', title: '' },
+        { dateLabel: 'e', title: '' },
+    ];
     
     new Vue({
     el: '#app', 
@@ -75,6 +93,9 @@ const data = [
         steps: data,
         steps2: data2,
         steps3: data3,
+        steps4: data4,
+        steps5: data5,
+        steps6: data6,
     },
     mounted() {
         var swiper = new Swiper('.swiper-container', {
@@ -97,7 +118,6 @@ const data = [
             prevButton: '.prev-slide2',
         });    
 
-        
         var swiper3 = new Swiper('.swiper-container3', {
             //pagination: '.swiper-pagination',
             slidesPerView: 3,
@@ -107,6 +127,36 @@ const data = [
             nextButton: '.next-slide3',
             prevButton: '.prev-slide3',
         });    
+
+        var swiper4 = new Swiper('.swiper-container4', {
+            //pagination: '.swiper-pagination',
+            slidesPerView: 3,
+            paginationClickable: true,
+            grabCursor: true,
+            paginationClickable: true,
+            nextButton: '.next-slide4',
+            prevButton: '.prev-slide4',
+        });   
+
+        var swiper5 = new Swiper('.swiper-container5', {
+            //pagination: '.swiper-pagination',
+            slidesPerView: 3,
+            paginationClickable: true,
+            grabCursor: true,
+            paginationClickable: true,
+            nextButton: '.next-slide5',
+            prevButton: '.prev-slide5',
+        });   
+
+        var swiper5 = new Swiper('.swiper-container6', {
+            //pagination: '.swiper-pagination',
+            slidesPerView: 3,
+            paginationClickable: true,
+            grabCursor: true,
+            paginationClickable: true,
+            nextButton: '.next-slide6',
+            prevButton: '.prev-slide6',
+        });   
     }
 })
 

@@ -207,7 +207,7 @@ header h2 {
 }
 
 .presentation {
-    background: rgb(20, 20, 20);
+    background: rgb(22, 22, 22);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -221,7 +221,71 @@ header h2 {
     padding-top: 2%;
 }
 
+/* PARCOURS / EXPERIENCES */
+
+.parcours{
+    padding-bottom: 4%;
+}
+
+.parcoursListe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.parcoursListe article{
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.parcoursListe article h2{
+    font-weight: normal;
+    font-size: 33px;
+}
+
+.parcoursListe div{
+    margin-bottom: 5%;
+}
+
+.parcoursListe div h3{
+    font-weight: normal;
+    margin: 0;
+    font-size: 23px;
+}
+
+.parcoursListe div h4{   
+    margin: 0;
+    font-size: 28px;
+    color: rgb(99, 145, 185);
+}
+
+.parcoursListe div h5{
+    font-weight: normal;
+    margin: 0;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.parcoursListe div h6{
+    font-weight: normal;
+    font-style: italic;
+    margin: 0;
+    font-size: 19px;
+    color: rgb(180, 180, 180);
+}
+
 /* COMPETENCES */
+
+.comp{
+    background: rgb(22, 22, 22);
+}
 
 #app {
     color: #e8eeff;
@@ -305,7 +369,7 @@ header h2 {
     content: '';
     width: 18px;
     height: 18px;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(22, 22, 22);
     border-radius: 25px;
     border: 2px solid rgb(99, 145, 185);
     position: absolute;
