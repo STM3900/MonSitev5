@@ -24,27 +24,31 @@
         <aside>
             <article>
                 <a><i class="material-icons" id="navIcon">arrow_upward</i></a> 
-                <a href="#">Accueil</a>
-            </article>
-            <article>
-                <a><i class="material-icons" id="navIcon">book</i></a> 
-                <a href="#">Parcours/Expériences</a>
+                <a class="js-scrollTo" href="#accueilAncre">Accueil</a>
             </article>
             <article>
                 <a><i class="material-icons" id="navIcon">assessment</i></a>
-                <a href="#">Compétences</a>
+                <a class="js-scrollTo" href="#recapAncre">Récap'</a>
+            </article>
+            <article>
+                <a><i class="material-icons" id="navIcon">book</i></a> 
+                <a class="js-scrollTo" href="#parcoursAncre">Parcours/Expériences</a>
+            </article>
+            <article>
+                <a><i class="material-icons" id="navIcon">assignment</i></a>
+                <a class="js-scrollTo" href="#compAncre">Compétences</a>
             </article>
             <article>
                 <a><i class="material-icons"id="navIcon"v>code</i></a> 
-                <a href="#">Projets</a>
+                <a class="js-scrollTo" href="#projetsAncre">Projets</a>
             </article>
             <article>
                 <a><i class="material-icons" id="navIcon">mail</i></a> 
-                <a href="#">Contact</a>
+                <a class="js-scrollTo" href="#contactAncre">Contact</a>
             </article>
         </aside>
     </nav>
-    <header>
+    <header id="accueilAncre" class="partieSelector">
         <article>
             <h1>THÉO MIGEAT</h1>
             <h2>Étudiant en seconde année d'informatique !</h2>
@@ -61,8 +65,30 @@
     <section class="presentation">
         <p>Étudiant en seconde année, à l'Epsi Grenoble, école d'informatique, je suis passionné par le web, où je prends plaisir à concevoir et réaliser des sites internet avec de plus en plus de fonctionnalités !</p>
     </section>
-    <section class="parcours">
-        <h1>Parcours / Expériences</h1>
+    <section class="recap partieSelector" id="recapAncre">
+        <h1><i class="material-icons" id="navIcon">assessment</i>Recap'</h1>
+        <div class="recapFlex">
+            <div>
+                <figure><embed src="https://wakatime.com/share/@STM3900/841fd5a6-f7b1-4261-afc5-6c7256ad0442.svg"></embed></figure>
+            </div>
+            <article>
+                <aside>
+                    <h3>+220</h3>
+                    <p>Heures sur des projets personnels <br> (selon WakaTime™)</p>
+                </aside>
+                <aside>
+                    <h3>8</h3>
+                    <p>Projets terminés</p>
+                </aside>
+                <aside>
+                    <h3>2</h3>
+                    <p>Projets en cours</p>
+                </aside>
+            </article>            
+        </div>
+    </section>
+    <section class="parcours partieSelector" id="parcoursAncre">
+        <h1><i class="material-icons" id="navIcon">book</i>Parcours / Expériences</h1>
         <div class="parcoursListe">
             <article>
                 <h2>Scolaire</h2>
@@ -88,8 +114,8 @@
             </article>
         </div>
     </section>
-    <section class="comp">
-        <h1>Compétences</h1>
+    <section class="comp partieSelector" id="compAncre">
+        <h1><i class="material-icons" id="navIcon">assignment</i>Compétences</h1>
         <div id="app" class="container">
             <div class="appDiv">
                 <h2>HTML / CSS</h2>
@@ -105,7 +131,7 @@
                               <span class="date">{{item.dateLabel}}<span>
                             </div>
                             <div class="status">
-                              <span><a href="">{{item.title}}</a></span>
+                              <span><a class="js-scrollTo" href="#projetsAncre">{{item.title}}</a></span>
                             </div>
                           </div>
                         </div>
@@ -132,7 +158,7 @@
                               <span class="date">{{item.dateLabel}}<span>
                             </div>
                             <div class="status">
-                              <span><a href="">{{item.title}}</a></span>
+                              <span><a class="js-scrollTo" href="#projetsAncre">{{item.title}}</a></span>
                             </div>
                           </div>
                         </div>
@@ -159,7 +185,7 @@
                               <span class="date">{{item.dateLabel}}<span>
                             </div>
                             <div class="status">
-                              <span><a href="">{{item.title}}</a></span>
+                              <span><a class="js-scrollTo" href="#projetsAncre">{{item.title}}</a></span>
                             </div>
                           </div>
                         </div>
@@ -186,7 +212,7 @@
                               <span class="date">{{item.dateLabel}}<span>
                             </div>
                             <div class="status">
-                              <span><a href="">{{item.title}}</a></span>
+                              <span><a class="js-scrollTo" href="#projetsAncre">{{item.title}}</a></span>
                             </div>
                           </div>
                         </div>
@@ -213,7 +239,7 @@
                               <span class="date">{{item.dateLabel}}<span>
                             </div>
                             <div class="status">
-                              <span><a href="">{{item.title}}</a></span>
+                              <span><a class="js-scrollTo" href="#projetsAncre">{{item.title}}</a></span>
                             </div>
                           </div>
                         </div>
@@ -240,7 +266,7 @@
                               <span class="date">{{item.dateLabel}}<span>
                             </div>
                             <div class="status">
-                              <span><a href="">{{item.title}}</a></span>
+                              <span><a class="js-scrollTo" href="#projetsAncre">{{item.title}}</a></span>
                             </div>
                           </div>
                         </div>
@@ -255,8 +281,8 @@
             </div>
         </div>
     </section>
-    <section class="projets">
-        <h1>Projets</h1>
+    <section class="projets partieSelector" id="projetsAncre">
+        <h1><i class="material-icons"id="navIcon"v>code</i>Projets</h1>
         <div class="projetsListe">
             <article class="musicHours">
                 <aside></aside>
@@ -505,8 +531,22 @@
             </article>
         </div>
     </section>
-    <section class="contact">
-        <h1>Contact</h1>
+    <section class="contact partieSelector" id="contactAncre">
+        <h1><i class="material-icons" id="navIcon">mail</i>Contact</h1>
+        <div>
+            <article class="contactLink">
+                <i class="fab fa-linkedin-in"></i>
+                <h2>LinkedIn</h2>
+            </article>
+            <article class="contactGit">
+                <i class="fab fa-github"></i>
+                <h2>GitHub</h2>
+            </article>
+            <article class="contactMail">
+                <i class="fas fa-envelope"></i>
+                <h2>theo.migeat@epsi.fr</h2>
+            </article>
+        </div>
     </section>
     <script src="js/app.js"></script>
     <script src="js/main.js"></script>  

@@ -14,7 +14,7 @@ $(document).ready(function() {
 });
 
 function openNav(){
-    document.getElementById("mySidenav").style.width = "350px";
+    document.getElementById("mySidenav").style.width = "300px";
     Overlay.style.display = "block";
     setTimeout(function(){
         Overlay.style.opacity = 0.5;
@@ -51,7 +51,7 @@ NavButton.addEventListener("mouseout", function(){
 
 const data = [
     { dateLabel: 'Février 2019', title: 'TEMA' },
-    { dateLabel: 'Mars 2019', title: 'Les Dessins de Lasr' },
+    { dateLabel: 'Mars 2019', title: 'LesDessinsdeLasr' },
     { dateLabel: 'Septembre 2019', title: 'BeeLeave' },
     { dateLabel: 'Décembre 2019', title: 'MusicHours' },
     { dateLabel: 'Janvier 2020', title: 'Ce site !' }
@@ -59,7 +59,7 @@ const data = [
 
     const data2 = [
     { dateLabel: 'Février 2019', title: 'TEMA' },
-    { dateLabel: 'Mars 2019', title: 'Les Dessins de Lasr' },
+    { dateLabel: 'Mars 2019', title: 'LesDessinsdeLasr' },
     { dateLabel: 'Septembre 2019', title: 'BeaLeave' }
     ];
 
@@ -76,7 +76,7 @@ const data = [
     ];
 
     const data5 = [
-        { dateLabel: 'Avril 2019', title: 'Hero And Monsters' },
+        { dateLabel: 'Avril 2019', title: 'HeroAndMonsters' },
         { dateLabel: 'e', title: '' },
         { dateLabel: 'e', title: '' },
     ];
@@ -180,7 +180,7 @@ for(let i = 0; i < SelectRow.length; i++){
 }
 
 //Projets
-const Projets = document.querySelectorAll('.projets');
+const Projets = document.querySelector('.projets');
 const ProjetsOverlay = document.querySelector('.projetOverlay');
 const ProjetsListe = document.querySelectorAll('.projetsListe article');
 const Panel = document.querySelectorAll('.panel');
@@ -260,3 +260,60 @@ function convBinaire()
     decimal.value = parseInt(binaire.value,2);
     hexadecimal.value = (parseInt(binaire.value,2)).toString(16);
 }
+
+//Contact :
+
+const ContactSeletor = document.querySelectorAll('.contact article');
+
+ContactSeletor[0].addEventListener("click", function(){
+    window.open('https://www.linkedin.com/in/theo-migeat/', '_blank');
+})
+
+ContactSeletor[1].addEventListener("click", function(){
+    window.open('https://github.com/STM3900', '_blank');
+})
+
+ContactSeletor[2].addEventListener("click", function(){
+    window.open('mailto:theo.migeat@epsi.fr');
+})
+
+//Tentative de scroll :
+
+$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+    var page = $(this).attr('href'); // Page cible
+    var speed = 1000; // Durée de l'animation (en ms)
+    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+    return false;
+});
+
+//Test de truc (à faire marcher)
+
+const SectionSelector = document.querySelectorAll('.partieSelector');
+const NavIconSelector = document.querySelectorAll('.sidenav aside article i');
+
+function checkVisibleGlobal(){
+    for(let i = 0; i < SectionSelector.length; i++){
+        if(checkVisible(SectionSelector[i]) == true){
+            if(i > 0){
+                NavIconSelector[i-1].classList.remove("navIconActive");
+            }
+            NavIconSelector[i].classList.add("navIconActive");
+        }
+        else{
+            NavIconSelector[i].classList.remove("navIconActive");
+        }
+    }
+}
+
+checkVisibleGlobal();
+
+window.onscroll = () => {
+    checkVisibleGlobal();
+};
+
+function checkVisible(elm) {
+    var rect = elm.getBoundingClientRect();
+    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+}
+
