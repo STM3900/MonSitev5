@@ -36,7 +36,7 @@ NavButton.addEventListener("click", function(){
     openNav();
     setTimeout(() => {
         NavButton.style.opacity = 0;
-    }, 100);
+    }, 120);
 });
 
 NavButton.addEventListener("mouseover", function(){
@@ -51,7 +51,7 @@ NavButton.addEventListener("mouseout", function(){
 
 const data = [
     { dateLabel: 'Février 2019', title: 'TEMA' },
-    { dateLabel: 'Mars 2019', title: 'LesDessinsdeLasr' },
+    { dateLabel: 'Mars 2019', title: 'Les Dessins de Lasr' },
     { dateLabel: 'Septembre 2019', title: 'BeeLeave' },
     { dateLabel: 'Décembre 2019', title: 'MusicHours' },
     { dateLabel: 'Janvier 2020', title: 'Ce site !' }
@@ -59,7 +59,7 @@ const data = [
 
     const data2 = [
     { dateLabel: 'Février 2019', title: 'TEMA' },
-    { dateLabel: 'Mars 2019', title: 'LesDessinsdeLasr' },
+    { dateLabel: 'Mars 2019', title: 'Les Dessins de Lasr' },
     { dateLabel: 'Septembre 2019', title: 'BeaLeave' }
     ];
 
@@ -76,7 +76,7 @@ const data = [
     ];
 
     const data5 = [
-        { dateLabel: 'Avril 2019', title: 'HeroAndMonsters' },
+        { dateLabel: 'Avril 2019', title: 'Hero And Monsters' },
         { dateLabel: 'e', title: '' },
         { dateLabel: 'e', title: '' },
     ];
