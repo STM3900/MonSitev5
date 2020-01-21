@@ -5,11 +5,6 @@ font-family: 'Quicksand', sans-serif;
 font-family: 'Julius Sans One', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
-/*
-html {
-    scroll-behavior: smooth;
-}
-*/
 
 body{
     margin: 0;
@@ -992,14 +987,13 @@ input[type*="e"]:focus{
     /* PANELS */
     
     .panelok{
-        height: 95%;
+        height: 100vh;
     }
     
     .panelFlex{
         height: 100%;
         flex-direction: column;
         padding: 0%;
-
     }
     
     .panelContent{
@@ -1023,6 +1017,11 @@ input[type*="e"]:focus{
         margin-top: 3%;
         margin-bottom: 3%;
     }
+
+    .panelclose{
+        top: 1%;
+        right: 5%;
+    }
     
     .contact div{
         flex-direction: column;
@@ -1032,6 +1031,203 @@ input[type*="e"]:focus{
             width: 95%;
             margin-top: 3%;
             margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    /* GLOBAL */
+    h1{
+        font-size: 6vw;
+    }
+    
+    h1 .material-icons{
+        font-size: 6vw;
+    }
+    
+    section{
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    /* HEADER */
+    header article div a{
+        font-size: 8vw;
+    }
+    
+    header h1 {
+        font-size: 13vw;
+    }
+    
+    header h2 {
+        font-size: 3.5vw;
+    }
+
+    /* PRESENTATION */
+    .presentation p{
+        font-size: 3vw;
+        padding-bottom: 0%;
+    }
+
+    /* RECAP */
+    .recapFlex article h3{
+        font-size: 6vw;
+    }
+    
+    .recapFlex article p{
+        font-size: 2.5vw;
+    }
+
+    /* PARCOURS */
+    .parcours{
+        padding-bottom: 4%;
+    }
+    
+    .parcoursListe{
+        flex-direction: column;
+    }
+    
+    .parcoursListe article{
+        width: 95%;
+    }
+    
+    .parcoursListe article h2{
+        font-size: 5.5vw;
+    }
+    
+    .parcoursListe div{
+        margin-bottom: 5%;
+    }
+    
+    .parcoursListe div h3{
+        font-size: 3.5vw;
+    }
+    
+    .parcoursListe div h4{   
+        font-size: 4vw;
+    }
+    
+    .parcoursListe div h5{
+        font-size: 3vw;
+    }
+    
+    .parcoursListe div h6{
+        font-size: 2vw;
+    }
+
+    /* COMP */
+    #app {
+        flex-direction: column;
+    }
+    
+    .appDiv{
+        width: 100%;
+    }
+
+    .row{
+        justify-content: space-between;
+    }
+    
+    .aled{
+        width: 80%;
+    }
+
+    .swiper-slide {
+        font-size: 2.5vw;
+    }
+    
+    #app button{
+        font-size: 4vw;
+    }
+    
+    /* PROJETS */
+
+    .projetsListe article{
+        height: 30vw;
+    }
+    
+    .projetsListe article aside{
+        width: 92.1%;
+        height: 30vw;
+    }
+
+    .projetsListe h3{
+        font-size: 5vw;
+    }
+    
+    .projetsListe h4{
+        font-size: 3.5vw;
+    }
+    
+    .projetsListe h5{
+        font-size: 3.5vw;
+    }
+
+    /* PANELS */
+    
+    .panelFlex h1{
+        font-size: 8vw;
+    }
+    
+    .panelFlex h2{
+        font-size: 3vw;
+    }
+    
+    .panelFlexListe{
+        flex-direction: column;
+    }
+
+    .panelFlexListe div{
+        width: 100%;
+    }
+    
+    .panelFlexDescConv{
+        width: 100%;
+    }
+    
+    .panelFlexDescConv p{
+        font-size: 3vw;
+    }
+    
+    .panelFlex .panelFlexDesc p{
+        font-size: 3vw;
+    }
+    
+    .panelFlexListe h2{
+        font-size: 5vw;
+    }
+    
+    .panelFlexListe li{
+        font-size: 3vw;
+    }
+
+    .panelPlusConv{
+        width: 100%;
+    }
+
+    form{
+        width: 85%;
+    }
+
+    .panelPlus img{
+        width: 35%;
+    }
+
+    .panelPlus a{
+        font-size: 3vw;
+        margin-top: 0%;
+        border: solid 1.3px white;
+    }
+
+    .contact article{
+        background: rgb(35, 35, 35);
+    }
+
+    .contact h2{
+        font-size: 3vw;
+    }
+
+    .contact article i{
+        font-size: 6vw;
     }
 }
 
