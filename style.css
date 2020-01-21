@@ -558,6 +558,14 @@ header h2 {
     background: #1c2230;
 }
 
+.auphys{
+    background-image: url("medias/images/AuphysWorks.jpg");
+}
+
+.sow{
+    background-image: url("medias/images/SOW.jpg");
+}
+
 .convertisseur{
     background: #2F243A;   
 }
@@ -735,6 +743,15 @@ header h2 {
     border: hidden blue 2px;
 }
 
+.panelFlexDesc a{
+    color: rgb(99, 145, 185);
+    transition: 0.3s;
+}
+
+.panelFlexDesc a:hover{
+    color: rgb(71, 108, 139);
+}
+
 .panelFlexDescConv{
     border: hidden blue 2px;
     width: 95%;
@@ -825,6 +842,7 @@ input[type*="e"]:focus{
 
 .contact{
     background: rgb(22, 22, 22);
+    padding-bottom: 4%;
 }
 
 .contact div{
