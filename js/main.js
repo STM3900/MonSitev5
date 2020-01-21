@@ -223,12 +223,32 @@ function closePanel(){
     }
 }
 
-
 ProjetsOverlay.addEventListener("click", function(){
     if(panelOn == true){
         closePanel();
     }        
 });
+
+//Clin D'oeil MusicHours
+const date = new Date();
+const MusicHoursSelector = document.querySelector('.musicHours');
+const MusicHoursSelectorInside = document.querySelectorAll('.musicHours')[1];
+
+if(date.getHours() >= 20){
+    MusicHoursSelector.style.backgroundImage = 'url("medias/images/MusicHoursNuit.jpg")';
+    MusicHoursSelectorInside.style.backgroundImage = 'url("medias/images/MusicHoursNuit.jpg")';
+    MusicHoursSelectorInside.classList.remove('brightless');
+}
+else if(date.getHours() == 18 || date.getHours() == 19 || date.getHours() == 6 || date.getHours() == 7){
+    MusicHoursSelector.style.backgroundImage = 'url("medias/images/MusicHoursCrep.jpg")';
+    MusicHoursSelectorInside.style.backgroundImage = 'url("medias/images/MusicHoursCrep.jpg")';
+    MusicHoursSelectorInside.classList.add('brightless');
+}
+else{
+    MusicHoursSelector.style.backgroundImage = 'url("medias/images/MusicHours.png")';
+    MusicHoursSelectorInside.style.backgroundImage = 'url("medias/images/MusicHours.png")';
+    MusicHoursSelectorInside.classList.add('brightless');
+}
 
 //Le convertisseur
 function convDecimal()
@@ -285,8 +305,6 @@ $('.js-scrollTo').on('click', function() { // Au clic sur un élément
     $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
     return false;
 });
-
-//Test de truc (à faire marcher)
 
 const SectionSelector = document.querySelectorAll('.partieSelector');
 const NavIconSelector = document.querySelectorAll('.sidenav aside article i');

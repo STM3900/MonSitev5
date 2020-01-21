@@ -551,7 +551,7 @@ header h2 {
 }
 
 .musicHours{
-  background-image: url("medias/images/MusicHours.png");
+    transition: background-image 1s;
 }
 
 .beeLeave{
