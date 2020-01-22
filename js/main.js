@@ -52,6 +52,7 @@ NavButton.addEventListener("mouseout", function(){
 const data = [
         { dateLabel: 'Février 2019', title: 'TEMA' },
         { dateLabel: 'Mars 2019', title: 'Les Dessins de Lasr' },
+        { dateLabel: 'Juin 2019', title: 'AuphysWorks' },
         { dateLabel: 'Septembre 2019', title: 'BeeLeave' },
         { dateLabel: 'Décembre 2019', title: 'MusicHours' },
         { dateLabel: 'Janvier 2020', title: 'Ce site !' }
@@ -60,6 +61,7 @@ const data = [
     const data2 = [
         { dateLabel: 'Février 2019', title: 'TEMA' },
         { dateLabel: 'Mars 2019', title: 'Les Dessins de Lasr' },
+        { dateLabel: 'Juin 2019', title: 'AuphysWorks' },
         { dateLabel: 'Septembre 2019', title: 'BeaLeave' }
     ];
 
