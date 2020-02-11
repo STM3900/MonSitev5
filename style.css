@@ -564,6 +564,15 @@ header h2 {
     text-align: center;
 }
 
+.br{
+    background-image: url("medias/images/Br.jpg");
+}
+
+
+.ann{
+    background-image: url("medias/images/ANN.jpg");
+}
+
 .musicHours{
     transition: background-image 1s;
 }
@@ -689,7 +698,7 @@ header h2 {
 }
 
 .panelPlus img{
-    width: 100%;
+    width: 100%; 
     opacity: 0.9;
 
     margin-bottom: 6%;
