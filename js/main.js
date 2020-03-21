@@ -55,38 +55,40 @@ const data = [
         { dateLabel: 'Juin 2019', title: 'AuphysWorks' },
         { dateLabel: 'Septembre 2019', title: 'BeeLeave' },
         { dateLabel: 'Décembre 2019', title: 'MusicHours' },
-        { dateLabel: 'Janvier 2020', title: 'Ce site !' }
+        { dateLabel: 'Janvier 2020', title: 'Ce site !' },
+        { dateLabel: 'Mars 2020', title: 'Lazublog' }
     ];
 
     const data2 = [
         { dateLabel: 'Février 2019', title: 'TEMA' },
         { dateLabel: 'Mars 2019', title: 'Les Dessins de Lasr' },
         { dateLabel: 'Juin 2019', title: 'AuphysWorks' },
-        { dateLabel: 'Septembre 2019', title: 'BeaLeave' }
+        { dateLabel: 'Septembre 2019', title: 'BeaLeave' },
+        { dateLabel: 'Mars 2020', title: 'Lazublog' }
     ];
 
     const data3 = [
         { dateLabel: 'Mars 2019', title: 'Convertisseur B/H/D' },
         { dateLabel: 'Décembre 2019', title: 'MusicHours' },
-        { dateLabel: 'e', title: '' },
+        { dateLabel: 'Mars 2020', title: 'Lazublog' }
     ];
 
     const data4 = [
         { dateLabel: 'Février 2019', title: 'TEMA' },
         { dateLabel: 'Septembre 2019', title: 'BeeLeave' },
-        { dateLabel: 'e', title: '' },
+        { dateLabel: 'Mars 2020', title: 'Lazublog' }
     ];
 
     const data5 = [
         { dateLabel: 'Avril 2019', title: 'Hero And Monsters' },
         { dateLabel: 'e', title: '' },
-        { dateLabel: 'e', title: '' },
+        { dateLabel: 'e', title: '' }
     ];
 
     const data6 = [
         { dateLabel: 'Mars 2019', title: 'Safe Or Well' },
-        { dateLabel: 'e', title: '' },
-        { dateLabel: 'e', title: '' },
+        { dateLabel: 'Fevrier 2020', title: 'Apocalypse Not Now' },
+        { dateLabel: 'Fevrier 2020', title: 'Breaking Bot' }
     ];
     
     new Vue({
