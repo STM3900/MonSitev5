@@ -566,6 +566,10 @@ header h2 {
     text-align: center;
 }
 
+.jourbon{
+    background: #ef476f;
+}
+
 .lazu{
     background-image: url("medias/images/lazublog.jpg");
 }
